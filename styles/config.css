@@ -9,7 +9,12 @@
 
   /* Grunnletur */
   --font-family-base: inter, helvetica, arial, sans-serif;
+  --font-family-nav: inter, helvetica, arial, sans-serif;
   --font-size-base: 16px;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
+  --font-size-h4: 1.125rem;
 
   /* Haus síðu, stærri á stærri skjám. */
   --font-size-header: 2rem;
@@ -29,6 +34,7 @@
   --spacing: 10px;
   --spacing-double: calc(var(--spacing) * 2);
   --spacing-triple: calc(var(--spacing) * 3);
+  --spacing-half: calc(var(--spacing) / 2);
 
   /** Grind **/
 
@@ -50,6 +56,9 @@
   /* Breidd á efni með offset, sú breidd sem meginmál þarf að vera þegar við
   höfum minna pláss en --max-width í vafra */
   --width-offset: calc(100% - (2 * var(--offset)));
+  --card-image-height: 300px;
+  --form-width: 100%;
+  --footer-max-width: 800px;
 
   /** Litir **/
 
@@ -66,5 +75,8 @@
 
   /** Annað **/
 
-  /* TODO hér þurfið þið að bæta við nokkrum stillingum */
+  --border-width: 1px;
+  --border-width-strong: 2px;
+  --border-radius: 5px;
+  --nav-padding: var(--spacing) var(--spacing) var(--spacing-double);
 }

@@ -1,0 +1,26 @@
+/** Töflur og ferðir */
+
+.ferdir-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: var(--min-width-table);
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: var(--spacing-half);
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-table-stripe);
+}

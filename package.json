@@ -3,19 +3,23 @@
   "version": "1.0.0",
   "description": "verkefni 3",
   "type": "commonjs",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html 'sidur/*.html' --lazy --no-cache",
-    "build": "parcel build index.html 'sidur/*.html'",
-    "format": "prettier '**/*.{css,html}' --write",
-    "lint": "stylelint '**/*.css'",
-    "lint:fix": "stylelint '**/*.css' --fix"
+    "dev": "parcel index.html sidur/ferdir.html sidur/skraning.html sidur/um.html --lazy --no-cache",
+    "build": "parcel build index.html sidur/ferdir.html sidur/skraning.html sidur/um.html --no-cache",
+    "format": "prettier \"**/*.{css,html}\" --write",
+    "lint": "stylelint \"**/*.css\"",
+    "lint:fix": "stylelint \"**/*.css\" --fix"
   },
   "devDependencies": {
     "parcel": "^2.16.4",
+    "prettier": "^3.6.2",
     "stylelint": "^17.15.0",
     "stylelint-config-recess-order": "^7.8.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-order": "^8.1.1"
+  },
+  "dependencies": {
+    "@parcel/rust-win32-x64-msvc": "^2.16.4",
+    "@parcel/source-map": "^2.1.1"
   }
 }

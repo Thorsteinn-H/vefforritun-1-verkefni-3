@@ -1,16 +1,11 @@
-/**
- * TODO custom variables
- * TODO skipta yfir í grid
- */
 .wrapper {
   display: grid;
-  gap: 30px;
+  grid-template-rows: auto auto 1fr auto;
+  gap: var(--spacing-triple);
   min-height: 100vh;
-  margin-top: 10px;
 }
 
 main {
-  flex: 1;
   width: var(--width-offset);
   max-width: var(--max-width);
   margin: 0 auto;

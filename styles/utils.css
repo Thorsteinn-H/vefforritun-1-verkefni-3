@@ -14,15 +14,14 @@
 /**
  * Almennt takka útlit, virkar bæði fyrir <a>
  * og <button>.
- * TODO nota custom variables
  */
 .button {
   display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  color: #ffeedd;
-  background-color: #996644;
+  padding: var(--spacing-half) var(--spacing);
   font-size: 1rem;
+  color: var(--color-accent-contrast);
   text-decoration: none;
+  background-color: var(--color-accent);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius);
 }
