@@ -15,16 +15,17 @@ nav {
 
 nav ul {
   display: flex;
-  gap: var(--gutter);
+  gap: clamp(0.35rem, 1vw, 1rem);
   justify-content: center;
-  width: 100%;
-  overflow: auto;
+  width: min(100%, 100vw);
+  overflow: hidden;
+  white-space: nowrap;
   list-style: none;
 }
 
 nav ul li {
   font-family: var(--font-family-nav);
-  font-size: var(--font-size-nav);
+  font-size: clamp(0.7rem, calc(100vw / 38), 1.125rem);
 }
 
 nav a {
@@ -41,8 +42,8 @@ nav strong {
   text-decoration: underline;
 }
 
-@media (width >= 500px) {
+@media (width >= 499px) {
   nav ul li {
-    font-size: var(--font-size-nav-large);
+    font-size: clamp(0.8rem, calc(100vw / 32), 1.125rem);
   }
 }

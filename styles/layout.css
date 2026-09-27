@@ -2,11 +2,13 @@
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   gap: var(--spacing-triple);
+  min-width: 0;
   min-height: 100vh;
 }
 
 main {
   width: var(--width-offset);
+  min-width: 0;
   max-width: var(--max-width);
   margin: 0 auto;
 }

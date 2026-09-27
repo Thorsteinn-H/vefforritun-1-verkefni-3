@@ -2,6 +2,8 @@
 
 .ferdir-container {
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   overflow-x: auto;
 }
 
@@ -23,4 +25,11 @@ th {
 
 tr:nth-child(even) {
   background-color: var(--color-table-stripe);
+}
+
+@media (width >= 700px) {
+  table {
+    width: 100%;
+    min-width: 0;
+  }
 }

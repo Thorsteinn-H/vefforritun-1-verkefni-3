@@ -29,7 +29,7 @@ html::before {
   margin-right: auto;
   margin-left: auto;
   pointer-events: none;
-  content: '';
+  content: "";
   background-image: var(--grid-background-columns);
   background-size: var(--grid-background-width) 100%;
 }
